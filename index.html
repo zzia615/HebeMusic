@@ -41,7 +41,31 @@
 					<a class="mui-card-link">Read more</a>
 				</div>
 			</div>-->
-			
+			div class="mui-card">
+				<div class="mui-card-header mui-card-media">
+					<img src="img/user-logo.jpg" />
+					<div class="mui-media-body">
+						焦龙
+						<p>发表于 2018-09-11 22:00</p>
+					</div>
+					<!--<img class="mui-pull-left" src="../images/logo.png" width="34px" height="34px" />
+					<h2>小M</h2>
+					<p>发表于 2016-06-30 15:30</p>-->
+				</div>
+				<div class="mui-card-content" >
+					<div id="my-player1"></div>
+					<div class="mui-card-content-inner">
+						<p>单曲MV发布于2018-08-30</p>
+						<p style="color: #333;">十七 - S.H.E</p>
+					</div>
+				</div>
+				
+				<!--<div class="mui-card-footer">
+					<a class="mui-card-link">Like</a>
+					<a class="mui-card-link">Comment</a>
+					<a class="mui-card-link">Read more</a>
+				</div>-->
+			</div>
 			<div class="mui-card">
 				<div class="mui-card-header mui-card-media">
 					<img src="img/user-logo.jpg" />
@@ -98,7 +122,34 @@
 							addition: ['https://api.prprpr.me/dplayer/bilibili?aid=4157142'] // 可选的，额外的弹幕，参见：`Bilibili弹幕支持`
 						}*/
 					});
-				</script>
+				
+		var dp = new DPlayer({
+						element: document.getElementById('my-player1'), // 可选，player元素
+						autoplay: false, // 可选，自动播放视频，不支持移动浏览器
+						theme: '#FADFA3', // 可选，主题颜色，默认: #b7daff
+						loop: true, // 可选，循环播放音乐，默认：true
+						lang: 'zh', // 可选，语言，`zh'用于中文，`en'用于英语，默认：Navigator 
+						//language
+						screenshot: true, // 可选，启用截图功能，默认值：false，注意：如果设置为
+						//true， 视频和视频截图必须启用跨域
+						hotkey: true, // 可选，绑定热键，包括左右键和空格，默认值：true
+						preload: 'auto', // 可选，预加载的方式可以是'none''metadata''auto'，默认
+						//值： 'auto'
+						video: { // 必需，视频信息
+							url: 'mv/17she.mp4'/*, // 必填，视频网址
+							pic: '若能绽放光芒.png' // 可选，视频截图*/
+						}/*,
+						danmaku: { // 可选，显示弹幕，忽略此选项以隐藏弹幕
+							id: '9E2E3368B56CDBB4', // 必需，弹幕 id，注意：它必须是唯一的，不能在你的新播放器
+							//中使用这些： `https://api.prprpr.me/dplayer/list`
+							api: 'https://api.prprpr.me/dplayer/', // 必需，弹幕 api
+							token: 'tokendemo', // 可选，api 的弹幕令牌
+							maximum: 1000, // 可选，最大数量的弹幕
+							addition: ['https://api.prprpr.me/dplayer/bilibili?aid=4157142'] // 可选的，额外的弹幕，参见：`Bilibili弹幕支持`
+						}*/
+					});
+				
+		</script>
 		</body>
 
 </html>
